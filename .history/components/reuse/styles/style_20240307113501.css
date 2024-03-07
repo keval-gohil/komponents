@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(20px); 
+    height: 7rem;
+    border-bottom: 0.1rem solid #fff;
+    padding: 0 2rem;
+}

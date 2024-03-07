@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(20px); 
+    height: 10rem;
+    border-bottom: 0.2rem solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(56,2,155,0), #fff, rgba(56,2,155,0));
+    border-image-slice: 1;
+    padding: 0 2rem;
+}
+
+nav h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+nav h2 span{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav div{
+    display: flex;
+    gap: 2rem;
+}
+nav div button{
+    display: flex;
+    align-items: end;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border: 0.1rem solid #525252;
+    border-radius: 0.7rem;
+    background: transparent;
+    cursor: pointer;
+}
+nav div button .mynaui--arrow-up-right {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6.5 17.5l11-11m0 0h-9m9 0v9'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+nav div button:nth-child(2){
+    background: #5924c7;
+}

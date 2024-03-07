@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Play:wght@400;700&display=swap');
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(20px); 
+    height: 10rem;
+    border-bottom: 0.2rem solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(56,2,155,0), #fff, rgba(56,2,155,0));
+    border-image-slice: 1;
+    padding: 0 2rem;
+}
+nav h1{
+    width: 20%;
+}
+nav h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Play", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-size: 3rem;
+}
+nav h2 span{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav div{
+    width: 20%;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+nav div button{
+    display: flex;
+    align-items: end;
+    font-size: 1.7rem;
+    padding: 1rem 1.5rem;
+    padding-bottom: 1rem;
+    border: 0.1rem solid #525252;
+    border-radius: 0.7rem;
+    background: transparent;
+    cursor: pointer;
+    font-family: "Play", sans-serif;
+}
+nav div button .mynaui--arrow-up-right {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6.5 17.5l11-11m0 0h-9m9 0v9'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+nav div button .ph--webhooks-logo {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23000' d='M178.16 184h-66.84a48 48 0 1 1-85.72-36.81a8 8 0 0 1 12.8 9.61A31.69 31.69 0 0 0 32 176a32 32 0 0 0 64 0a8 8 0 0 1 8-8h74.16a16 16 0 1 1 0 16M64 192a16 16 0 0 0 14.08-23.61l35.77-58.14a8 8 0 0 0-2.62-11a32 32 0 1 1 46.1-40.06a8 8 0 1 0 14.67-6.4a48 48 0 1 0-75.62 55.33L64.44 160H64a16 16 0 0 0 0 32m128-64a48.18 48.18 0 0 0-18 3.49L142.08 79.6A16 16 0 1 0 128 88h.44l35.78 58.15a8 8 0 0 0 11 2.61A32 32 0 1 1 192 208a8 8 0 0 0 0 16a48 48 0 0 0 0-96'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+nav div button:nth-child(2){
+    background: #121212;
+    border-color: #121212;
+    color: #f0f0f0;
+    align-items: center;
+}
+nav div button:hover {
+    text-decoration: underline;
+}
