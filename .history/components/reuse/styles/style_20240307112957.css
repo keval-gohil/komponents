@@ -1,8 +1,0 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 7rem;
-    background: transparent;
-    backdrop-filter: blur(10px);
-}
