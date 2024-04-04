@@ -1,8 +1,108 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Anta&family=Play:wght@400;700&display=swap');
 
 
-nav{
+
+
+.bouncing-blob {
+	width: 32vw;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	will-change: transform;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	transform-origin: left top;
+  }
+  
+  .bouncing-blob--blue {
+	background: #4783c7;
+  }
+  
+  .bouncing-blob--white {
+	background: #ffffff;
+	z-index: 2;
+	width: 15vw;
+  }
+  
+  .bouncing-blob--purple {
+	background: #8c8ff1;
+  }
+  
+  .bouncing-blob--pink {
+	background: #e289cd50;
+  }
+  
+  .bouncing-blobs-container {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .bouncing-blobs-glass {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backdrop-filter: blur(140px);
+	-webkit-backdrop-filter: blur(140px);
+	pointer-events: none;
+  }
+  
+  .bouncing-blobs {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .main-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+  }
+  
+  
+  
+  
+  @media (max-width: 1200px) {
+	.bouncing-blobs-glass {
+	  backdrop-filter: blur(120px);
+	  -webkit-backdrop-filter: blur(120px);
+	}
+  }
+  
+  @media (max-width: 500px) {
+	.bouncing-blob {
+	  width: 60vw;
+	}
+	.bouncing-blob--white {
+	  width: 30vw;
+	}
+	.bouncing-blobs-glass {
+	  backdrop-filter: blur(90px);
+	  -webkit-backdrop-filter: blur(90px);
+	}
+  
+  }
+
+
+
+
+
+
+
+/* header.jsx */
+nav.main-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,36 +114,37 @@ nav{
     border-image-slice: 1;
     padding: 0 2rem;
 }
-nav h1{
+nav.main-nav h1{
     width: 25%;
 }
-nav h1 img{
+nav.main-nav h1 img{
     height: 5rem;
 }
 
-nav h2{
+nav.main-nav h2{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-family: "Play", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 3rem;
     font-size: 3rem;
 }
-nav h2 span{
+nav.main-nav h2 span{
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
 }
 
-nav div{
+nav.main-nav div{
     width: 25%;
     display: flex;
     justify-content: end;
     gap: 2rem;
 }
-nav div button{
+nav.main-nav div a{
+    color: #0f172a;
+    text-decoration: none;
     display: flex;
     align-items: end;
     font-size: 1.7rem;
@@ -53,9 +154,8 @@ nav div button{
     border-radius: 0.7rem;
     background: transparent;
     cursor: pointer;
-    font-family: "Play", sans-serif;
 }
-nav div button .mynaui--arrow-up-right {
+nav.main-nav div a .mynaui--arrow-up-right {
     display: inline-block;
     width: 1.1em;
     height: 1.1em;
@@ -68,7 +168,7 @@ nav div button .mynaui--arrow-up-right {
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
 }
-nav div button .ph--webhooks-logo {
+nav.main-nav div a .ph--webhooks-logo {
     display: inline-block;
     width: 1em;
     height: 1em;
@@ -82,12 +182,20 @@ nav div button .ph--webhooks-logo {
     mask-size: 100% 100%;
 }
 
-nav div button:nth-child(2){
+nav.main-nav div a:nth-child(2){
     background: #0f172a;
     border-color: #0f172a;
     color: #fff;
     align-items: center;
 }
-nav div button:hover {
+nav.main-nav div a:hover {
     text-decoration: underline;
+}
+
+
+.main-sec{
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

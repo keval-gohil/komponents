@@ -1,30 +1,29 @@
 @media (max-width: 900px) {
-	nav{
+	nav.main-nav{
         height: 25rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    nav h1{
+    nav.main-nav h1{
         width: 50%;
     }
 
-    nav h2{
+    nav.main-nav h2{
         width: 100%;
         margin-top: 5rem;
         display: flex;
         order: 3;
         flex-direction: column;
         text-align: center;
-        font-family: "Play", sans-serif;
         font-weight: 800;
         text-transform: uppercase;
         line-height: 3rem;
         font-size: 3rem;
     }
     
-    nav div{
+    nav.main-nav div{
         width: 50%;
         display: flex;
         justify-content: end;
