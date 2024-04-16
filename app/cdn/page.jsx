@@ -1,5 +1,7 @@
 import React from 'react'
 import "../globals.css"
+import '@/components/reuse/styles/style.css'
+import '@/components/reuse/styles/responsive.css'
 import '@/components/cdn-reuse/styles/cdn-style.css'
 import '@/components/cdn-reuse/styles/cdn-responsive.css'
 import CdnHeader from '@/components/cdn-reuse/cdnHeader'

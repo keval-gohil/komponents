@@ -4,6 +4,7 @@ import '@/components/reuse/styles/responsive.css'
 import Background from '@/components/reuse/background'
 import Header from '@/components/reuse/header'
 import MainSection from '@/components/reuse/mainSection'
+import Footer from '@/components/reuse/footer'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <Background />
       <Header />
       <MainSection />
+      <Footer />
     </>
   )
 }

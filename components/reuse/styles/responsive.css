@@ -1,3 +1,14 @@
+
+
+@media (max-width: 1300px) {
+      .main-sec .comps{
+        width: calc(33.46% - 1.5rem);
+      }
+}
+
+
+
+
 @media (max-width: 900px) {
 	nav.main-nav{
         height: 25rem;
@@ -30,3 +41,18 @@
         gap: 2rem;
     }
   }
+
+
+
+  @media (max-width: 700px) {
+    .main-sec .comps{
+      width: calc(50% - 1rem);
+    }
+}
+
+
+@media (max-width: 320px) {
+    .main-sec .comps{
+      width: 100%;
+    }
+}
