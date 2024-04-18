@@ -7,6 +7,14 @@ import Comp5 from './compsList/comp5'
 import Comp6 from './compsList/comp6'
 import Comp7 from './compsList/comp7'
 import Comp8 from './compsList/comp8'
+import Comp9 from './compsList/comp9'
+import Comp10 from './compsList/comp10'
+import Comp11 from './compsList/comp11'
+import Comp12 from './compsList/comp12'
+import Comp13 from './compsList/comp13'
+import Comp14 from './compsList/comp14'
+import Comp15 from './compsList/comp15'
+import Comp16 from './compsList/comp16'
 
 const MainSection = () => {
   return (
@@ -20,6 +28,14 @@ const MainSection = () => {
             <Comp6 />
             <Comp7 />
             <Comp8 />
+            <Comp9 />
+            <Comp10 />
+            <Comp11 />
+            <Comp12 />
+            <Comp13 />
+            <Comp14 />
+            <Comp15 />
+            <Comp16 />
         </div>
     </>
   )

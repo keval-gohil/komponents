@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 
 const Header = () => {
@@ -10,7 +9,7 @@ const Header = () => {
             <h2>Next - Node Components<span>using Next.js 14</span></h2>
             <div>
               <a href="https://kval.vercel.app/" target='_blank'>Author <i className='mynaui--arrow-up-right'></i></a>
-              <Link href="/cdn">Use CDN&nbsp;<i className='ph--webhooks-logo'></i></Link>
+              <a href="https://github.com/keval-gohil" target='_blank'><i className='mdi--github'></i>&nbsp;GitHub</a>
             </div>
         </nav>
     </>

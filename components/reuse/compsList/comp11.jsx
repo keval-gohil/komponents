@@ -1,11 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Comp3 = () => {
+const Comp11 = () => {
   return (
     <>
-      <div className="comps comp3">
-      <h3 className='comps-h'>Comp-3 <span>(Navigation v2)</span></h3>
+      <div className="comps comp11">
+      <h3 className='comps-h'>Comp-11 <span>(Popup)</span></h3>
         <ul>
           <li><Link href="/comps">header1</Link></li>
           <li><Link href="/comps">header2</Link></li>
@@ -15,4 +15,4 @@ const Comp3 = () => {
   )
 }
 
-export default Comp3
+export default Comp11
