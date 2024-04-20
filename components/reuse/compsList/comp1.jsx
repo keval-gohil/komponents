@@ -5,10 +5,10 @@ const Comp1 = () => {
   return (
     <>
       <div className="comps comp1">
-        <h3 className='comps-h'>Comp-1 <span>(Lazy-Loading...)</span></h3>
+        <h3 className='comps-h'>Comp-1 <span>(Loading UI)</span></h3>
         <ul>
-          <li><Link href="/comps">header1</Link></li>
-          <li><Link href="/comps">header2</Link></li>
+          <li><Link href="/comps/comp1/Single-Intersection-Observer-Streaming">Single Intersection Observer Streaming</Link></li>
+          {/* <li><Link href="/comps">Bulk Intersection Observer Streaming</Link></li> */}
         </ul>
       </div>
     </>

@@ -194,29 +194,134 @@ nav.main-nav div a:hover {
 }
 
 
+.scrollable-tabs-container {
+  /* background: #000; */
+  margin: 3rem 2rem;
+  margin-bottom: 0;
+  border-radius: .5rem;
+  border: .2rem solid #ffffff41;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.7rem;
+}
+
+.scrollable-tabs-container svg {
+  width: 4rem;
+  height: 4rem;
+  padding: .8rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 50%;
+  pointer-events: auto;
+}
+
+.scrollable-tabs-container ul {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.2rem 2.5rem;
+  margin: 0;
+  list-style: none;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.scrollable-tabs-container ul.dragging a {
+  pointer-events: none;
+}
+
+.scrollable-tabs-container ul.dragging {
+  scroll-behavior: auto;
+}
+
+.scrollable-tabs-container ul::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable-tabs-container a {
+  color: #202020;
+  text-decoration: none;
+  background: #ffffff41;
+  padding: .5rem 2rem;
+  display: inline-block;
+  border-radius: .5rem;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.scrollable-tabs-container a.active {
+  background: #fff;
+  color: #202020;
+}
+
+.scrollable-tabs-container .right-arrow,
+.scrollable-tabs-container .left-arrow {
+  position: absolute;
+  height: 100%;
+  width: 10rem;
+  top: 0;
+  display: none;
+  align-items: center;
+  padding: 0 1rem;
+  pointer-events: none;
+}
+.scrollable-tabs-container svg {
+  color: #000;
+}
+
+.scrollable-tabs-container .right-arrow.active,
+.scrollable-tabs-container .left-arrow.active {
+  display: flex;
+}
+
+.scrollable-tabs-container .right-arrow {
+  right: 0;
+  background: linear-gradient(to left, whitesmoke 50%, transparent);
+  justify-content: flex-end;
+}
+
+.scrollable-tabs-container .left-arrow {
+  background: linear-gradient(to right, whitesmoke 50%, transparent);
+}
+
+.scrollable-tabs-container svg:hover {
+  background: #e2e2e2;
+}
+
+
+
+
 .main-sec{
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 5rem 2rem;
+  margin-top: 3rem;
   font-size: 1.7rem;
 }
 .main-sec .comps{
-  padding: 1rem 2rem;
-  line-height: 2.5rem;
+  padding: 1.5rem 2rem;
   width: calc(25% - 1.5rem);
   background: linear-gradient(to bottom left, #ffffff19, transparent);
-  border-radius: 1rem;
+  border-radius: .5rem;
   border: .2rem solid #ffffff41;
 }
+.highlight {
+  outline: 2px solid red; /* Change the outline style as desired */
+}
+
 .main-sec .comps .comps-h{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .main-sec .comps .comps-h span{
   font-weight: 400;
 }
 .main-sec .comps ul{
   margin: 0 1.7rem;
+}
+.main-sec .comps ul li{
+  margin-top: 1rem;
 }
 .main-sec .comps ul li::marker{
   color: #202020;
@@ -232,6 +337,24 @@ nav.main-nav div a:hover {
   text-decoration: underline;
   color: #000;
 }
+
+.back-to-btn{
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #202020;
+  margin: 3rem 0;
+  margin-left: 2rem;
+  border: .2rem solid #202020;
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+}
+.back-to-btn:hover{
+  text-decoration: underline;
+}
+
 
 
 .footer{
