@@ -4,7 +4,7 @@ import React from 'react'
 const Comp5 = () => {
   return (
     <>
-      <div className="comps comp5">
+      <div className="comps comp5 Btn-v2">
       <h3 className='comps-h'>Comp-5 <span>(Button v2)</span></h3>
         <ul>
           <li><Link href="/comps">header1</Link></li>

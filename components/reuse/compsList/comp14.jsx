@@ -4,7 +4,7 @@ import React from 'react'
 const Comp14 = () => {
   return (
     <>
-      <div className="comps comp14">
+      <div className="comps comp14 Widget">
       <h3 className='comps-h'>Comp-14 <span>(Widget)</span></h3>
         <ul>
           <li><Link href="/comps">header1</Link></li>

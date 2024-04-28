@@ -4,7 +4,7 @@ import React from 'react'
 const Comp16 = () => {
   return (
     <>
-      <div className="comps comp16 LoadingUI">
+      <div className="comps comp16 Screen">
       <h3 className='comps-h'>Comp-16 <span>(Screen)</span></h3>
         <ul>
           <li><Link href="/comps">header1</Link></li>

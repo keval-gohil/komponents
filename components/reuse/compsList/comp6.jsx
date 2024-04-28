@@ -4,7 +4,7 @@ import React from 'react'
 const Comp6 = () => {
   return (
     <>
-      <div className="comps comp6">
+      <div className="comps comp6 Hov-on">
       <h3 className='comps-h'>Comp-6 <span>(Hover On)</span></h3>
         <ul>
           <li><Link href="/comps">header1</Link></li>

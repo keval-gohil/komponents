@@ -4,6 +4,9 @@
       .main-sec .comps{
         width: calc(33.46% - 1.5rem);
       }
+      .main-sec-comp .comps{
+        width: 100%;
+      }
 }
 
 
@@ -47,6 +50,9 @@
   @media (max-width: 700px) {
     .main-sec .comps{
       width: calc(50% - 1rem);
+    }
+    .main-sec-comp .comps{
+      width: 100%;
     }
 }
 

@@ -4,7 +4,7 @@ import React from 'react'
 const Comp1 = () => {
   return (
     <>
-      <div className="comps comp1">
+      <div className="comps comp1 LoadingUI">
         <h3 className='comps-h'>Comp-1 <span>(Loading UI)</span></h3>
         <ul>
           <li><Link href="/comps/comp1/Single-Intersection-Observer-Streaming">Single Intersection Observer Streaming</Link></li>

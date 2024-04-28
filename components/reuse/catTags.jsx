@@ -110,9 +110,9 @@ const ScrollableTabsContainer = () => {
       const targetElement = document.querySelector(`.${hash}`);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
-        targetElement.classList.add('highlight');
+        targetElement.classList.add('outline-highlight');
         setTimeout(() => {
-          targetElement.classList.remove('highlight');
+          targetElement.classList.remove('outline-highlight');
         }, 5000);
       }
     };
@@ -132,10 +132,10 @@ const ScrollableTabsContainer = () => {
     const targetElement = document.querySelector(`.${hash}`);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: 'smooth' });
-      targetElement.classList.add('highlight');
+      targetElement.classList.add('outline-highlight');
       setTimeout(() => {
         if (targetElement.classList) {
-          targetElement.classList.remove('highlight');
+          targetElement.classList.remove('outline-highlight');
         }
       }, 5000);
     } else {
@@ -162,49 +162,49 @@ const ScrollableTabsContainer = () => {
           <a href="#LoadingUI" onClick={() => handleLinkClick('LoadingUI')}>Loading UI</a>
         </li>
         <li>
-          <a href="#">Navigation v1</a>
+          <a href="#Nav-v1" onClick={() => handleLinkClick('Nav-v1')}>Navigation v1</a>
         </li>
         <li>
-          <a href="#">Navigation v2</a>
+          <a href="#Nav-v2" onClick={() => handleLinkClick('Nav-v2')}>Navigation v2</a>
         </li>
         <li>
-          <a href="#">Button v1</a>
+          <a href="#Btn-v1" onClick={() => handleLinkClick('Btn-v1')}>Button v1</a>
         </li>
         <li>
-          <a href="#">Button v2</a>
+          <a href="#Btn-v2" onClick={() => handleLinkClick('Btn-v2')}>Button v2</a>
         </li>
         <li>
-          <a href="#">Hover On</a>
+          <a href="#Hov-on" onClick={() => handleLinkClick('Hov-on')}>Hover on</a>
         </li>
         <li>
-          <a href="#">Tooltip</a>
+          <a href="#Tooltip" onClick={() => handleLinkClick('Tooltip')}>Tooltip</a>
         </li>
         <li>
-          <a href="#">Dropdown</a>
+          <a href="#Dropdown" onClick={() => handleLinkClick('Dropdown')}>Dropdown</a>
         </li>
         <li>
-          <a href="#">Accordion</a>
+          <a href="#Accordion" onClick={() => handleLinkClick('Accordion')}>Accordion</a>
         </li>
         <li>
-          <a href="#">Carousel</a>
+          <a href="#Carousel" onClick={() => handleLinkClick('Carousel')}>Carousel</a>
         </li>
         <li>
-          <a href="#">Popup</a>
+          <a href="#Popup" onClick={() => handleLinkClick('Popup')}>Popup</a>
         </li>
         <li>
-          <a href="#">Gallery</a>
+          <a href="#Gallery" onClick={() => handleLinkClick('Gallery')}>Gallery</a>
         </li>
         <li>
-          <a href="#">Form</a>
+          <a href="#Form" onClick={() => handleLinkClick('Form')}>Form</a>
         </li>
         <li>
-          <a href="#">Widget</a>
+          <a href="#Widget" onClick={() => handleLinkClick('Widget')}>Widget</a>
         </li>
         <li>
-          <a href="#">Animation</a>
+          <a href="#Animation" onClick={() => handleLinkClick('Animation')}>Animation</a>
         </li>
         <li>
-          <a href="#">Screen</a>
+          <a href="#Screen" onClick={() => handleLinkClick('Screen')}>Screen</a>
         </li>
       </ul>
 
