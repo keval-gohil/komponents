@@ -14,11 +14,12 @@
 
 @media (max-width: 900px) {
 	nav.main-nav{
-        height: 25rem;
+        min-height: 25rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        padding-top: 1rem;
     }
     nav.main-nav h1{
         width: 50%;

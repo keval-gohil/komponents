@@ -4,7 +4,7 @@ import '@/components/reuse/styles/style.css'
 import '@/components/reuse/styles/responsive.css'
 import Background from '@/components/reuse/background'
 import Footer from '@/components/reuse/footer'
-import BackTobtn from '@/components/reuse/backTobtn'
+import BackToBtn from '@/components/reuse/backToBtn'
 import Comp1 from '@/components/reuse/compsList/comp1'
 
 const comp1LUI = () => {
@@ -22,7 +22,7 @@ const comp1LUI = () => {
             </nav>
 
             
-           <BackTobtn />
+           <BackToBtn />
 
             <div className="main-sec main-sec-comp">
                 <Comp1 />

@@ -4,7 +4,7 @@ import '@/components/reuse/styles/style.css'
 import '@/components/reuse/styles/responsive.css'
 import Background from '@/components/reuse/background'
 import Footer from '@/components/reuse/footer'
-import BackTobtn from '@/components/reuse/backTobtn'
+import BackToBtn from '@/components/reuse/backToBtn'
 import DemoEditor from '@/components/reuse/demoEditor'
 
 const SingleIOStreaming = () => {
@@ -19,7 +19,7 @@ const SingleIOStreaming = () => {
                     <a href="https://github.com/keval-gohil" target='_blank'><i className='mdi--github'></i>&nbsp;GitHub Code</a>
                 </div>
             </nav>
-            <BackTobtn />
+            <BackToBtn />
             <DemoEditor />
             <Footer />
         </>

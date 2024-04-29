@@ -131,7 +131,9 @@ const ScrollableTabsContainer = () => {
   const scrollToTarget = (hash) => {
     const targetElement = document.querySelector(`.${hash}`);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+      const offset = targetElement.offsetTop - 20;
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      window.scrollBy(0, offset); 
       targetElement.classList.add('outline-highlight');
       setTimeout(() => {
         if (targetElement.classList) {
@@ -142,6 +144,7 @@ const ScrollableTabsContainer = () => {
       console.error(`Element with class ${hash} not found.`);
     }
   };
+  
 
 
   
