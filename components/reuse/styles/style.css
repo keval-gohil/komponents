@@ -342,6 +342,14 @@ nav.main-nav div a:hover {
   color: #000;
 }
 
+
+.link-flow{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
 .back-to-btn{
   width: fit-content;
   display: flex;

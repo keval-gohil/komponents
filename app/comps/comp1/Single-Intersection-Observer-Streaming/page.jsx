@@ -6,6 +6,7 @@ import Background from '@/components/reuse/background'
 import Footer from '@/components/reuse/footer'
 import BackToBtn from '@/components/reuse/backToBtn'
 import DemoEditor from '@/components/reuse/demoEditor'
+import Link from 'next/link'
 
 const SingleIOStreaming = () => {
     return (
@@ -19,7 +20,11 @@ const SingleIOStreaming = () => {
                     <a href="https://github.com/keval-gohil" target='_blank'><i className='mdi--github'></i>&nbsp;GitHub Code</a>
                 </div>
             </nav>
-            <BackToBtn />
+            
+            <div className="link-flow">
+                <BackToBtn />
+                <span><span>comps</span><Link href="../comp1">comp1</Link><span>Single-Intersection-Observer-Streaming</span></span>
+            </div>
             <DemoEditor />
             <Footer />
         </>
