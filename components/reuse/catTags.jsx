@@ -159,7 +159,7 @@ const ScrollableTabsContainer = () => {
 
       <ul ref={tabsListRef}>
         <li>
-          <a href="#" className="active">All Comps</a>
+          <a href="#" className="active">Komponents</a>
         </li>
         <li>
           <a href="#LoadingUI" onClick={() => handleLinkClick('LoadingUI')}>Loading UI</a>

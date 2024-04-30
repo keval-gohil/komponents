@@ -1,14 +1,17 @@
 import React from 'react'
+import Link from 'next/link'
 import "@/app/globals.css"
 import '@/components/reuse/styles/style.css'
 import '@/components/reuse/styles/responsive.css'
 import Background from '@/components/reuse/background'
 import Footer from '@/components/reuse/footer'
-import BackToBtn from '@/components/reuse/backToBtn'
 import DemoEditor from '@/components/reuse/demoEditor'
-import Link from 'next/link'
+import CopyIcon from '@/components/reuse/copyIcon'
 
 const SingleIOStreaming = () => {
+
+    
+
     return (
         <>
             <Background />
@@ -22,8 +25,10 @@ const SingleIOStreaming = () => {
             </nav>
             
             <div className="link-flow">
-                <BackToBtn />
-                <span><span>comps</span><Link href="../comp1">comp1</Link><span>Single-Intersection-Observer-Streaming</span></span>
+                <b>
+                    <Link href="/">Komponents</Link>/<span>comps</span>/<Link href="../comp1">comp1</Link>/<span>Single-Intersection-Observer-Streaming</span>
+                    <CopyIcon />
+                </b>
             </div>
             <DemoEditor />
             <Footer />
