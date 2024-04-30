@@ -4,7 +4,7 @@ import '@/components/reuse/styles/style.css'
 import '@/components/reuse/styles/responsive.css'
 import Background from '@/components/reuse/background'
 import Footer from '@/components/reuse/footer'
-import BackToBtn from '@/components/reuse/backToBtn'
+import BackToBtn from '@/components/reuse/backTobtn'
 import Comp1 from '@/components/reuse/compsList/comp1'
 
 const comp1LUI = () => {
